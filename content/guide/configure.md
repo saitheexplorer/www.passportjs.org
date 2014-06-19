@@ -150,3 +150,5 @@ received, this ID is used to find the user, which will be restored to
 The serialization and deserialization logic is supplied by the application,
 allowing the application to choose an appropriate database and/or object mapper,
 without imposition by the authentication layer.
+
+In both `passport.serializeUser()` and `passport.deserializeUser()`, `req` is accessible through an optional first parameter (e.g. `function(req, user, done)`.
